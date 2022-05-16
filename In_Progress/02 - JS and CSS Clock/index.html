@@ -85,7 +85,7 @@
 
       console.log(h, m, s);
 
-      
+      restoreAttributes();
       calculate(s, m, h);
     }
 
@@ -99,7 +99,6 @@
       checkTime(s, m, h);
 
       rotation(sRotation, mRotation, hRotation);
-      restoreAttributes();
     }
 
 
@@ -121,15 +120,27 @@
 
       if(s==0)
       {
-        document.getElementsByClassName("second-hand")[0].style.removeProperty("transition");
+        document.getElementsByClassName("hand")[2].style.transition='all 0.0s';
+      }
+
+      if(m==0)
+      {
+        document.getElementsByClassName("hand")[1].style.transition='all 0.0s';
+      }
+
+      if(h==0 || h==1)
+      {
+        document.getElementsByClassName("hand")[0].style.transition='all 0.0s';
       }
     }
 
     function restoreAttributes()
     {
-      document.getElementsByClassName("second-hand")[0].style.transition='all 0.25s';
-      document.getElementsByClassName("min-hand")[0].style.transition='all 0.25s';
-      document.getElementsByClassName("hour-hand")[0].style.transition='all 0.25s';
+      
+        for(let x=0; x<3; x++)
+        {
+          document.getElementsByClassName("hand")[x].style.removeProperty("transition");
+        }
     }
 
   </script>
