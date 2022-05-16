@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>See how it works</title>
+
+        <style>
+            body 
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: black;
+                color: white;
+                font-family: Arial;
+                font-size: 72px;
+                overflow-y: hidden;
+            }
+
+            #links-container
+            {
+                height: 100px;
+                border-top: 2px solid white;
+                border-bottom: 2px solid white;
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+                animation: hello 1s;
+                overflow-y: hidden;
+                overflow-x: auto;
+            }
+
+            @keyframes hello
+            {
+                0% {opacity: 0;}
+                100% {opacity: 1;}
+            }
+
+            .link
+            {
+                color: white;
+            }
+
+            .no-link
+            {
+                color: rgb(85, 85, 85);
+            }
+
+            a 
+            {
+                text-decoration: none;
+                animation: hello 3s;
+                margin: 10px;
+            }
+
+                        /* Works on Firefox */
+            * {
+                scrollbar-width: thin;
+                scrollbar-color: rgb(85, 85, 85) #101015;
+            }
+            
+            /* Works on Chrome, Edge, and Safari */
+            *::-webkit-scrollbar {
+                width: 12px;
+            }
+            
+            *::-webkit-scrollbar-track {
+                background: #000000;
+            }
+            
+            *::-webkit-scrollbar-thumb {
+                background-color: rgb(85, 85, 85);
+                border-radius: 20px;
+                border: 0;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div id="links-container">
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="DONE/02 - JS and CSS Clock/index.html" class="link" target="_blank">2</a> 
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+            <a href="" class="no-link" target="_blank">#</a>
+        </div>
+    </body>
+</html>
